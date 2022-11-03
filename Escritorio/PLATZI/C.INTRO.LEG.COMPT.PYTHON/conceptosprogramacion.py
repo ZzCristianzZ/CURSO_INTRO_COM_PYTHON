@@ -44,6 +44,28 @@ numeroint = int(input('Escribe un numero: '))
 suma1 = numeroint + 5
 print(suma1)
 
+#Clase "Programas Ramificados"
+# Operadores de comparacion
+
+2 == 3
+2 != 3
+2 > 3
+2 < 3
+2 <= 3
+2 >= 3
+
+# Operadores logicos 
+
+#true and False
+#false or True
+#not True
+
+#Condicionales 
+# if <Condicion>
+# elif, else 
+
+
+
 
 
 
