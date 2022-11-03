@@ -23,5 +23,29 @@ my_str[2:]
 my_str[::2]
 # Por ejemplo este muestra cada 2 pocisiones el caracter que se encuentra en el mismo.
 
+nombre = input ('Cual es tu Nombre: ')
+# La creciacion de variables por ingreso de datos tipo strong
+nombre
+print(nombre)
+# imprimme en pantalla el valor de la variable ingresada por el usuario asignada a nombre
+print('Tu nombre es ', nombre)
+
+print (f'Tu nombre es {nombre}')
+
+# Si ejecutamos este input sin clasificar el tipo de dato a ingresar, este se tomara uniicamente como STRONG, por lo que si necesitamos otro tipo de dato cambia su sintaxis
+
+numeroStrong = input('Esribe un numero: ')
+#suma = numeroStrong + 5 
+#print(suma)
+# Este dara como resultado el error de sintaxis
+
+numeroint = int(input('Escribe un numero: '))
+
+suma1 = numeroint + 5
+print(suma1)
+
+
+
+
 
 
