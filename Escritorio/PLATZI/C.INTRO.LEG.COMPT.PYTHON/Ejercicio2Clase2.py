@@ -7,4 +7,6 @@ elif num_1 < num_2:
     print('el segundo numero es mayor que el primero')
 elif num_1 == num_2:
     print ('Los dos numeros son iguales')
+else:
+    print('Los valores ingresados no soon correctos')
 
