@@ -1,8 +1,13 @@
+
+seguir = 'si'
+
 def opciones():
     
+    while seguir == 'si':
+
         print(f'Opciones para hallar raiz cuadrada \n (1)Enumeracion Exhaustiva \n (2) aproximacion de soluciones \n (3) Busqueda Binaria')
         
-        seguir = 'si'
+        
         opcion = int(input('Elija una opcion: '))
         numero = int(input('Elija un numero: '))
 
@@ -25,10 +30,10 @@ def Enumeracion(objetivo):
     
     if respuesta**2 == objetivo:
         print(f'La raiz cuadrada de {objetivo} es {respuesta}')
-        
+        seguir =input('Desea probar otro numero o metodo ? Digite si para continuar, No para salir: ')
     else:
         print(f'{objetivo} no tiene una raiz cuadrada exacta')
-        
+        seguir =input('Desea probar otro numero o metodo ? Digite si para continuar, No para salir: ')
         
     
 
@@ -43,10 +48,10 @@ def Aproximacion(objetivo):
     
     if abs(respuesta**2 - objetivo) >= epsilon:
         print (f'No se encontro la raiz cuadrada {objetivo}')
-        
+        seguir =input('Desea probar otro numero o metodo ? Digite si para continuar, No para salir: ')
     else:
         print (f'La raiz cuadrada de {objetivo} es aproximadamente {respuesta}')
-        
+        seguir =input('Desea probar otro numero o metodo ? Digite si para continuar, No para salir: ')
 
 def Busquedabinaria(objetivo):
     epsilon = 0.001
@@ -64,8 +69,11 @@ def Busquedabinaria(objetivo):
 
         respuesta = (alto + bajo)/2
     print(f'La raiz cuadrada de {objetivo} es {respuesta}')
-    
+    seguir =input('Desea probar otro numero o metodo ? Digite si para continuar, No para salir: ')
 
+  
+
+    
 
 opciones()
 
